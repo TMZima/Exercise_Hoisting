@@ -12,9 +12,16 @@ console.log("Destination:", destination);
 
 /* Task 3: Declare a Constant Travel Date */
 // TODO: Use `const` to declare a variable named `travelDate` and set it to `"2024-03-15"`. Try to change the `travelDate` to another value and observe and explain what happens as a comment.
+
+const travelDate = "2024-03-15";
+console.log(`Travel Date: ${travelDate}`);
+travelDate = "2024-03-16";
+console.log(`Travel Date: ${travelDate}`);
+
 /*
  * Observations:
  * TODO: Explain here.
+ * The constant variable 'travelDate' cannot be reassigned to a new value after their initial assignment. It throws a TypeError: Assignment to constant variable.
  */
 
 /* Task 4: Experiment with Variable Hoisting */
