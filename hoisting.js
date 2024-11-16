@@ -15,8 +15,8 @@ console.log("Destination:", destination);
 
 const travelDate = "2024-03-15";
 console.log(`Travel Date: ${travelDate}`);
-travelDate = "2024-03-16";
-console.log(`Travel Date: ${travelDate}`);
+// travelDate = "2024-03-16";
+// console.log(`Travel Date: ${travelDate}`);
 
 /*
  * Observations:
@@ -26,7 +26,11 @@ console.log(`Travel Date: ${travelDate}`);
 
 /* Task 4: Experiment with Variable Hoisting */
 // TODO: Before declaring any variable, try to print a variable named `timeMachineModel` to the console. Then, declare `timeMachineModel` using `var` and assign it the value `"T-800"`. Observe and explain what happens as a comment.
+
+console.log(`Time Machine Model: ${timeMachineModel}`);
+var timeMachineModel = "T-800";
+
 /*
  * Observations:
- * TODO: Explain here.
+ * TODO: When logging the variable 'timeMachineModel' before declaring it, it throws a ReferenceError: Cannot access 'timeMachineModel' before initialization. By declaring the variable 'timeMachineModel' using 'var', the variable is hoisted to the top of the scope, and the value is assigned to it. The variable is then accessible and can be printed to the console without any errors. In the order of execution, written in the exercise, the console.log() statement is executed before the variable declaration, but the variable is hoisted to the top of the scope, so it prints 'undefined' to the console instead of throwing an error.
  */
